@@ -1,0 +1,114 @@
+.cartWrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promContact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+.ourLocation {
+  font-size: 40px;
+  margin-top: 50px;
+  font-family: "BlocHeavy", sans-serif;
+}
+.wrapOneCart {
+  margin-bottom: 40px;
+  border-radius: 12px;
+  width: 700px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.wrapWithText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.wrpaTextL {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.adressName {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 25px;
+  max-width: 500px;
+}
+.adressNamePhome {
+  font-family: "BlocHeavy", sans-serif;
+  font-size: 25px;
+  max-width: 500px;
+  margin-top: 30px;
+}
+.pInFooterISmall {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 10px;
+  width: 218px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.iFillTikTok {
+  font-size: 80px;
+  color: #131313;
+}
+.aInstagramSquare {
+  font-size: 80px;
+  color: #e1306c;
+}
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+  .wrapOneCart {
+    margin-bottom: 40px;
+    border-radius: 12px;
+    width: 500px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  .wrapOneCart {
+    margin-bottom: 40px;
+    border-radius: 12px;
+    width: 500px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  .wrapWithText {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+  .wrapOneCart {
+    margin-bottom: 40px;
+    border-radius: 12px;
+    width: 98%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  .wrapWithText {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+  }
+}

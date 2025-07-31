@@ -1,0 +1,399 @@
+.headerWrap {
+  position: absolute;
+  width: 100%;
+  font-family: "Avanti", sans-serif;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: none;
+  z-index: 2000;
+}
+.headerImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.logo {
+  position: relative;
+  width: 157px;
+  height: 137px;
+  margin-left: 75px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+.navigations {
+  width: 610.594px;
+  height: 63.822px;
+  background: #ef7e0c;
+  border-radius: 5px;
+  margin-top: 64px;
+  margin-left: 55px;
+  margin-right: 39px;
+}
+.cartNfm {
+  margin-top: 64px;
+  cursor: pointer;
+  /* position: relative;
+  z-index: 1; */
+}
+.navList {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.liOnl {
+  cursor: pointer;
+  font-family: "Avanti", sans-serif;
+  color: #fefaf5;
+
+  text-align: right;
+
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sonvectort {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.twoBigF {
+  position: absolute;
+  top: 88px;
+  right: 0;
+}
+.imagerollOne {
+  position: absolute;
+  width: 229px;
+  height: 229px;
+  transform: rotate(-45deg);
+  right: 0;
+  top: 50px;
+}
+.maki {
+  position: absolute;
+  right: 290px;
+  top: 130px;
+}
+.greenRoll {
+  position: absolute;
+  right: 250px;
+  top: 320px;
+}
+.rolleRed {
+  position: absolute;
+  right: 550px;
+  top: 620px;
+}
+.rollpalka {
+  position: absolute;
+  right: 0px;
+  top: 450px;
+  z-index: 5;
+}
+.vectorone {
+  position: absolute;
+  right: 0px;
+  top: 650px;
+  z-index: 4;
+}
+.vectortwo {
+  position: absolute;
+  right: 0px;
+  top: 640px;
+  z-index: 4;
+}
+.vectorthre {
+  position: absolute;
+  right: 0px;
+  top: 630px;
+  z-index: 4;
+}
+.vectorfour {
+  position: absolute;
+  right: 0px;
+  top: 620px;
+  z-index: 4;
+}
+.ectorfive {
+  position: absolute;
+  right: 0px;
+  top: 610px;
+  z-index: 4;
+}
+.vectorsix {
+  position: absolute;
+  right: 0px;
+  top: 600px;
+  z-index: 4;
+}
+.vectorseven {
+  position: absolute;
+  right: 0px;
+  top: 590px;
+  z-index: 4;
+}
+.vectoreight {
+  position: absolute;
+  right: 0px;
+  top: 580px;
+  z-index: 4;
+}
+.vectornine {
+  position: absolute;
+  right: 0px;
+  top: 570px;
+  z-index: 4;
+}
+.wrapCartInHeader {
+  position: relative;
+  cursor: pointer;
+}
+.countInCart {
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  background: white;
+  color: #ef7e0c;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 5px 8px;
+  z-index: 10;
+  font-family: "Avanti", sans-serif;
+  font-weight: bolder;
+}
+.footerWrap {
+  width: 100%;
+  height: 160px;
+  background: #fefaf5;
+  border-top: 1px solid black;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logoInFooter {
+  position: relative;
+  width: 157px;
+  height: 137px;
+
+  cursor: pointer;
+}
+
+.wrapNumber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teleA {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 40px;
+  color: #df7047;
+}
+.linkPhoneIn {
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 223px;
+  height: 44px;
+  box-shadow: 0.85px 1.71px 3.42px 0 rgba(242, 147, 76, 0.69);
+  margin-top: 15px;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 22px;
+  cursor: pointer;
+  color: black;
+}
+.pInFooterI {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.pInFooterISmall {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 10px;
+  width: 218px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.iFillTikTok {
+  font-size: 80px;
+  color: #131313;
+}
+.aInstagramSquare {
+  font-size: 80px;
+  color: #e1306c;
+}
+.mobileNav {
+  position: relative;
+  z-index: 20;
+}
+.burgerIcon {
+  color: #ef7e0c;
+  /* color: black; */
+  font-size: 60px;
+  margin-top: 64px;
+  cursor: pointer;
+}
+.mobileOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+.mobileList {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  height: 95%;
+}
+.liInPhoneMenu {
+  cursor: pointer;
+  font-family: "Avanti", sans-serif;
+  color: #fefaf5;
+
+  text-align: right;
+
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.closeIcon {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+  .logoInFooter {
+    position: relative;
+    width: 100px;
+    height: 87px;
+
+    cursor: pointer;
+  }
+  .teleA {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 30px;
+    color: #df7047;
+  }
+  .linkPhoneIn {
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 44px;
+    box-shadow: 0.85px 1.71px 3.42px 0 rgba(242, 147, 76, 0.69);
+    margin-top: 15px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  .headerWrap {
+    position: absolute;
+    width: 100%;
+    font-family: "Avanti", sans-serif;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+    z-index: 2000;
+  }
+  .logoInFooter {
+    position: relative;
+    width: 100px;
+    height: 87px;
+
+    cursor: pointer;
+  }
+  .footerWrap {
+    width: 100%;
+    height: auto;
+    background: #fefaf5;
+    border-top: 1px solid black;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .logo {
+    position: relative;
+    width: 100px;
+    height: 87px;
+    margin-left: 75px;
+    margin-top: 60px;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+  .headerWrap {
+    position: absolute;
+    width: 100%;
+    font-family: "Avanti", sans-serif;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+    z-index: 2000;
+  }
+  .logoInFooter {
+    position: relative;
+    width: 100px;
+    height: 87px;
+
+    cursor: pointer;
+  }
+  .footerWrap {
+    width: 100%;
+    height: auto;
+    background: #fefaf5;
+    border-top: 1px solid black;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .logo {
+    position: relative;
+    width: 100px;
+    height: 87px;
+    margin-left: 0px;
+    margin-top: 60px;
+    cursor: pointer;
+  }
+}

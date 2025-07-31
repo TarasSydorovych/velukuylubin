@@ -1,0 +1,339 @@
+.wrapAllAdmin {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: white;
+}
+
+.wrapCategoryAdm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+}
+/* .wrapBackMenu {
+  width: 260px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 20px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  border-bottom-right-radius: 20px;
+}
+.linkInDas {
+  font-family: "Futura PT";
+  color: #042037;
+  font-size: 24px;
+} */
+.wrapBackMenu {
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #1d857e; /* Фон меню */
+  flex-shrink: 0;
+  border-bottom-right-radius: 20px; /* Округлі кути знизу */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1); /* Тінь для бокового меню */
+}
+
+.linkInDas {
+  font-family: "Futura PT", sans-serif;
+  color: #042037;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #ffffff; /* Білий фон для посилань */
+}
+
+.linkInDas:hover {
+  background-color: #e09c1e; /* Темніший жовтий при наведенні */
+  color: #ffffff; /* Білий текст при наведенні */
+}
+.formWrapCat {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Futura PT", sans-serif;
+  color: #042037;
+  margin-top: 30px;
+}
+.wrapOneMenuLinkf {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.labelWithNameCat {
+  flex: 1;
+  min-width: 250px;
+}
+.labelWithNameCatWith {
+  flex: 1;
+  min-width: 250px;
+}
+.catLabel {
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: block;
+  color: #042037;
+}
+
+.inputInCate,
+.textAreaInCate,
+.reacrQilrddf {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: "Futura PT", sans-serif;
+}
+
+.reacrQilrddf {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: "Futura PT", sans-serif;
+  height: 300px; /* Встановіть потрібну висоту */
+  overflow: hidden; /* Запобігає виходу вмісту за межі */
+}
+
+.inputInCate:focus,
+.textAreaInCate:focus,
+.reacrQilrddf:focus {
+  border-color: #1d857e;
+  outline: none;
+  box-shadow: 0 0 5px rgba(248, 177, 35, 0.5);
+}
+
+.reacrQilrddf .ql-container {
+  height: 100%; /* Розтягує контейнер на всю висоту елемента */
+  border: none; /* Прибираємо додаткові рамки */
+}
+
+.reacrQilrddf .ql-editor {
+  height: 100%; /* Робить редактор однакової висоти з контейнером */
+  max-height: 250px; /* Максимальна висота, щоб уникнути виходу за межі */
+  overflow-y: auto; /* Додаємо вертикальну прокрутку, якщо вміст більший */
+  padding: 10px; /* Додаємо відступи */
+  box-sizing: border-box; /* Враховуємо padding у розрахунку висоти */
+}
+.textAreaInCate {
+  min-height: 100px;
+}
+
+.submitBtn {
+  background-color: #1d857e;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Futura PT", sans-serif;
+}
+
+.submitBtn:hover {
+  background-color: #da9a1e;
+}
+
+.selectInCate {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: "Futura PT", sans-serif;
+}
+
+.bigDescriptino {
+  width: 600px;
+  height: 500px;
+}
+.productForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.formGroup {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+}
+.formGroupSeo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  margin-top: 50px;
+}
+.longDescriptions {
+  margin-top: 80px;
+}
+.seoDescTitle {
+  margin-top: 80px;
+}
+.inputInAddWorks {
+  width: 50%;
+  height: 50px;
+  margin-top: 20px;
+}
+.formGroupWorks {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  margin-top: 50px;
+}
+.newWorksH2 {
+  margin-top: 50px;
+}
+.mainLogin {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.enterH1 {
+  font-family: "Futura PT";
+  color: #042037;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.enterButtonIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #1d857e;
+  color: white;
+  font-family: "Futura PT";
+  font-size: 20px;
+  width: 300px;
+  height: 60px;
+  border: none;
+}
+.enterButtonInNew {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #1d857e;
+  color: white;
+  font-family: "Futura PT";
+  font-size: 18px;
+  width: 200px;
+  height: 40px;
+  border: none;
+}
+.wrapMainButton {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*Стилі для таблиці категорій */
+.wrapTableAll {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Futura PT", sans-serif;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+}
+
+.tableHeader {
+  background-color: #042037;
+}
+
+.tableHeaderCell {
+  color: #ffffff;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.tableRow {
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.tableRow:hover {
+  background-color: #1d857e;
+}
+
+.tableCell {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.editButton,
+.deleteButton {
+  background-color: #1d857e;
+  color: #042037;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-family: "Futura PT", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+.editButton:hover,
+.deleteButton:hover {
+  background-color: #e09c1e;
+}
+
+.deleteButton {
+  background-color: #d9534f;
+  color: #ffffff;
+}
+
+.deleteButton:hover {
+  background-color: #c9302c;
+}
+.logoutButton {
+  background-color: #d9534f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-family: "Futura PT", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+.logoutButton:hover {
+  background-color: #c9302c;
+}

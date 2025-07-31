@@ -1,0 +1,251 @@
+.wrapAllAdmin {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: white;
+}
+
+.wrapCategoryAdm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  width: 100%;
+}
+.enterH1 {
+  font-family: "Futura PT";
+  color: #042037;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.productForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formGroup {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroupFull {
+  flex: 1 1 100%;
+}
+
+.productLabel {
+  font-size: 14px;
+  color: #042037;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.productInput,
+.productTextarea,
+.productSelect,
+.productFileInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-family: "Futura PT", sans-serif;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.productInput:focus,
+.productTextarea:focus,
+.productSelect:focus,
+.productFileInput:focus {
+  border-color: #1d857e;
+  outline: none;
+  box-shadow: 0 0 5px rgba(248, 177, 35, 0.5);
+}
+
+.productTextarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.productQuill {
+  border-radius: 5px;
+
+  font-family: "Futura PT", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* Фіксована висота для ReactQuill */
+  margin-bottom: 100px;
+}
+
+/* .productQuill .ql-editor {
+  height: 100%; 
+  overflow-y: auto; 
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.productQuill .ql-toolbar {
+  border-bottom: 1px solid #ddd;
+  flex-shrink: 0;
+}
+
+.productQuill .ql-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+*/
+.imagesList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.imageItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.modelFile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.removeButton,
+.addButton {
+  background-color: #1d857e;
+  color: #042037;
+  border: none;
+  padding: 5px 10px;
+  font-family: "Futura PT", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.removeButton:hover,
+.addButton:hover {
+  background-color: #e09c1e;
+}
+
+.submitButton {
+  background-color: #042037;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-family: "Futura PT", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.submitButton:hover {
+  background-color: #1a3b5e;
+}
+
+.characteristicRow {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.characteristicInput {
+  flex: 1 1 calc(50% - 10px);
+}
+
+.productFileInput {
+  padding: 8px;
+}
+
+.productSelect {
+  background-color: #ffffff;
+}
+.selectedPhotosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.photoWrapper {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.photoPreview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.photoPreview:hover {
+  transform: scale(1.05);
+}
+
+.deletePhotoButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #d9534f;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.deletePhotoButton:hover {
+  background: #d9534f;
+  color: #ffffff;
+}
+.tiptapToolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.tiptapEditor {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 200px;
+  border-radius: 4px;
+}
