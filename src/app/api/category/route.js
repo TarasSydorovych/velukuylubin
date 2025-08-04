@@ -171,12 +171,40 @@ import { NextResponse } from "next/server";
 import { mongooseConnect } from "@/lib/mongoose";
 import { Category } from "@/models/Category";
 import mongoose from "mongoose";
+import { transliterate } from "../../../utils/transliterate";
 
 // GET (всі категорії або по id)
+// export async function GET(req) {
+//   await mongooseConnect();
+//   const { searchParams } = new URL(req.url);
+//   const id = searchParams.get("id");
+
+//   try {
+//     if (id) {
+//       const category = await Category.findById(id).populate("parent");
+//       if (!category) {
+//         return NextResponse.json(
+//           { message: "Категорія не знайдена" },
+//           { status: 404 }
+//         );
+//       }
+//       return NextResponse.json(category);
+//     } else {
+//       const categories = await Category.find().populate("parent");
+//       return NextResponse.json(categories);
+//     }
+//   } catch (error) {
+//     return NextResponse.json(
+//       { message: "Помилка при отриманні", error },
+//       { status: 500 }
+//     );
+//   }
+// }
 export async function GET(req) {
   await mongooseConnect();
   const { searchParams } = new URL(req.url);
   const id = searchParams.get("id");
+  const slug = searchParams.get("slug");
 
   try {
     if (id) {
@@ -187,19 +215,51 @@ export async function GET(req) {
           { status: 404 }
         );
       }
+      // (опціонально) теж повертати масив з одним елементом,
+      // якщо хочеш уніфікувати формат:
+      // return NextResponse.json([category]);
       return NextResponse.json(category);
-    } else {
-      const categories = await Category.find().populate("parent");
-      return NextResponse.json(categories);
     }
-  } catch (error) {
-    return NextResponse.json(
-      { message: "Помилка при отриманні", error },
-      { status: 500 }
-    );
+
+    if (slug) {
+      const cats = await Category.find(
+        {},
+        {
+          name: 1,
+          longdesc: 1,
+          seotitle: 1,
+          ceodescriptions: 1,
+          seoDescription: 1,
+          seodescription: 1,
+          parent: 1,
+          shorttitle: 1,
+        }
+      )
+        .populate("parent")
+        .lean();
+
+      const found = cats.find((c) => transliterate(c?.name?.ua || "") === slug);
+      console.log("found", found);
+
+      if (!found) {
+        return NextResponse.json(
+          { message: "Категорія не знайдена" },
+          { status: 404 }
+        );
+      }
+
+      // ГОЛОВНЕ: повертаємо масив із одним елементом
+      return NextResponse.json([found]);
+    }
+
+    // без id і slug — повертаємо всі
+    const all = await Category.find().populate("parent");
+    return NextResponse.json(all);
+  } catch (e) {
+    console.error("Category GET error", e);
+    return NextResponse.json({ message: "Помилка сервера" }, { status: 500 });
   }
 }
-
 // POST
 export async function POST(req) {
   await mongooseConnect();

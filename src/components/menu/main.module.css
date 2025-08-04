@@ -631,6 +631,13 @@
   line-height: 31.5px;
   letter-spacing: 0.78px;
 }
+.longCategoryText {
+  font-family: "Comfortaa", sans-serif;
+  width: 80%;
+}
+.longTextInner {
+  line-height: 1.8;
+}
 @media only screen and (max-width: 1400px) and (min-width: 1200px) {
   .wrapSmalBlock {
     position: relative;

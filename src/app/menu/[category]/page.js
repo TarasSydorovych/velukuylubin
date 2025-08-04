@@ -15,6 +15,7 @@ async function getCategoryBySlug(slug) {
   const res = await fetch(`http://localhost:3000/api/category?slug=${slug}`, {
     cache: "no-store",
   });
+  console.log("slug", slug);
 
   if (!res.ok) return null;
 
@@ -45,6 +46,7 @@ export default async function MenuCategoryPage({ params }) {
   if (!category) return notFound();
 
   const products = await getProductsByCategoryId(category._id);
+  console.log("category", category);
 
   return (
     <div className={css.allWrap}>

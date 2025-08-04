@@ -11,7 +11,6 @@ import ProductImageWithZoom from "./ProductImageWithZoom";
 
 const Product = ({ product }) => {
   const { name, shortDescription, images, characteristics, price } = product;
-  console.log("images", product);
 
   const imageUrl = images && images.length > 0 ? images[0] : "/placeholder.png";
   const slug = transliterate(name?.ua || "product");
@@ -39,7 +38,7 @@ const Product = ({ product }) => {
       </Link>{" "}
       <p className={css.descRoll}>
         {characteristics && characteristics.length > 0
-          ? characteristics.map((char) => char.value).join(", ")
+          ? characteristics.map((char) => char.name).join(", ")
           : "Опис відсутній"}
       </p>
       {/* <div className={css.wrapCounter}>

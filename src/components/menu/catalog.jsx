@@ -2,8 +2,15 @@ import css from "./main.module.css";
 import Product from "../mainpage/product";
 import { transliterate } from "@/utils/transliterate";
 import Link from "next/link";
+function normalizeHeadingLevels(html = "") {
+  return html
+    .replaceAll(/<h1(\s|>)/gi, "<h2$1")
+    .replaceAll(/<\/h1>/gi, "</h2>");
+}
+const Catalog = ({ categories, products, activeCategory }) => {
+  const rawHtml = activeCategory?.longdesc?.ua || "";
+  const longHtml = rawHtml;
 
-const Catalog = ({ categories, products }) => {
   return (
     <section className={css.blockCatalogWrap}>
       <p className={css.chousYour}>ОБЕРІТЬ СВІЙ УЛЮБЛЕНИЙ РОЛ</p>
@@ -22,6 +29,14 @@ const Catalog = ({ categories, products }) => {
         ))}
       </div>{" "}
       <div className={css.productWrap}></div>
+      {longHtml && (
+        <div className={css.longCategoryText} key={activeCategory?._id}>
+          <article
+            className={css.longTextInner}
+            dangerouslySetInnerHTML={{ __html: longHtml }}
+          />
+        </div>
+      )}
     </section>
   );
 };

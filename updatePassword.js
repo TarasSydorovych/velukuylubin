@@ -6,7 +6,7 @@ const MONGODB_URI = "mongodb://localhost:27017/velukuilubin";
 async function updatePassword() {
   await mongoose.connect(MONGODB_URI);
 
-  const hashedPassword = await bcrypt.hash("123456", 10);
+  const hashedPassword = await bcrypt.hash("Lubin147852369lub", 10);
 
   await mongoose.connection.db
     .collection("users")

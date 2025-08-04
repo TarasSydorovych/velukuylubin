@@ -6,6 +6,7 @@ import Header from "@/components/standartComponents/header";
 import newForkd from "../../../img/newForkd.png";
 import CartControls from "@/components/product/CartControls";
 import Footer from "@/components/standartComponents/footer";
+import ProductImageWithZoomBig from "@/components/mainpage/ProductImageWithZoomBig";
 
 // ⛓️ Отримати ВСІ товари
 async function getAllProducts() {
@@ -24,6 +25,7 @@ export default async function ProductPage({ params }) {
 
   // 🔍 Знаходимо товар по трансліту з назви
   const product = products.find((p) => transliterate(p.name.ua) === slug);
+  console.log("product", product);
 
   if (!product) return notFound();
 
@@ -37,8 +39,14 @@ export default async function ProductPage({ params }) {
       
             className={css.imageIn}
         /> */}
-        <div className={css.wrapImage}>
+        {/* <div className={css.wrapImage}>
           <Image src={newForkd} alt={product.name.ua} className={css.imageIn} />
+        </div> */}
+        <div className={css.wrapImage}>
+          <ProductImageWithZoomBig
+            imageUrl={product.images}
+            alt={product.name?.ua || "Суші"}
+          />{" "}
         </div>
         <div className={css.wrapOneBlockWith}>
           <h1 className={css.title}>{product.name.ua}</h1>
@@ -47,7 +55,7 @@ export default async function ProductPage({ params }) {
           <ul className={css.chars}>
             {product.characteristics?.map((char, idx) => (
               <li className={css.wrapLi} key={idx}>
-                {char.value},
+                {char.name},
               </li>
             ))}
           </ul>

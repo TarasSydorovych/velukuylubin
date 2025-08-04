@@ -1,5 +1,5 @@
 // src/app/admin/page.js
-import styles from "../../components/admin/admin.module.css";
+import styles from "../../components/admin/styles/addStyle.module.css";
 import BackMenu from "../../components/admin/backMenu";
 
 export default function AdminHomePage() {
